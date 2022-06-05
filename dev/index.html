@@ -42,16 +42,16 @@ Embedding dimension: 3</code></pre><p>Points can be subtracted to produce a vect
  2.0
  4.0
  6.0</code></pre><p>We can add a point to a vector though, and get a new point:</p><pre><code class="language-julia hljs">F + Vec(1, 1, 1)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">Point(2.0, 3.0, 4.0)</code></pre><p>And finally, we can create points at random with:</p><pre><code class="language-julia hljs">ps = rand(Point2, 10)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">10-element Vector{Point2}:
- Point(0.7348189964647716, 0.15827807590946397)
- Point(0.09346253722028586, 0.5274215653824974)
- Point(0.09984804096398892, 0.7020360292897336)
- Point(0.6100014409195167, 0.8813012804275426)
- Point(0.05056278540424186, 0.718472967713112)
- Point(0.9808881317466634, 0.4393390781751404)
- Point(0.05158900552392254, 0.7515069351336352)
- Point(0.69822720512813, 0.8332688844006161)
- Point(0.5852930852561973, 0.5946691827187723)
- Point(0.295124243836836, 0.7984641087555535)</code></pre><h3 id="Primitives"><a class="docs-heading-anchor" href="#Primitives">Primitives</a><a id="Primitives-1"></a><a class="docs-heading-anchor-permalink" href="#Primitives" title="Permalink"></a></h3><p>Primitive geometries such as <a href="geometries/primitives.html#Meshes.Box"><code>Box</code></a>, <a href="geometries/primitives.html#Meshes.Ball"><code>Ball</code></a>, <a href="geometries/primitives.html#Meshes.Sphere"><code>Sphere</code></a>, <a href="geometries/primitives.html#Meshes.Cylinder"><code>Cylinder</code></a> are those geometries that can be efficiently represented in a computer without discretization. We can construct such geometries using clean syntax:</p><pre><code class="language-julia hljs">b = Box((0.0, 0.0, 0.0), (1.0, 1.0, 1.0))
+ Point(0.7959963382217539, 0.13425940511592327)
+ Point(0.9448796224840951, 0.9384007403934846)
+ Point(0.9328938772242894, 0.026824538882650573)
+ Point(0.62736818093193, 0.9541351610422792)
+ Point(0.39208121804241447, 0.45455569326392564)
+ Point(0.04491355411254261, 0.2456066539457552)
+ Point(0.926967472035174, 0.4933053664990167)
+ Point(0.7714086999114023, 0.8239827139073763)
+ Point(0.6215567255947376, 0.3705129543151634)
+ Point(0.21298210342931623, 0.18473049804894504)</code></pre><h3 id="Primitives"><a class="docs-heading-anchor" href="#Primitives">Primitives</a><a id="Primitives-1"></a><a class="docs-heading-anchor-permalink" href="#Primitives" title="Permalink"></a></h3><p>Primitive geometries such as <a href="geometries/primitives.html#Meshes.Box"><code>Box</code></a>, <a href="geometries/primitives.html#Meshes.Ball"><code>Ball</code></a>, <a href="geometries/primitives.html#Meshes.Sphere"><code>Sphere</code></a>, <a href="geometries/primitives.html#Meshes.Cylinder"><code>Cylinder</code></a> are those geometries that can be efficiently represented in a computer without discretization. We can construct such geometries using clean syntax:</p><pre><code class="language-julia hljs">b = Box((0.0, 0.0, 0.0), (1.0, 1.0, 1.0))
 
 viz(b)</code></pre><div data-jscall-id="38"><script data-jscall-id="39" type="text/javascript">
     function register_resize_handler(remote_origin) {
@@ -62,7 +62,7 @@ viz(b)</code></pre><div data-jscall-id="38"><script data-jscall-id="39" type="te
             const uuid = event.data[0];
             const width = event.data[1];
             const height = event.data[2];
-            const iframe = document.getElementById('348d1048-b1f5-413a-af1d-aa743369469c');
+            const iframe = document.getElementById('dd3e1b5b-4317-4b54-8de9-35f7b89cac1c');
             if (iframe) {
                 iframe.style.width = width + "px";
                 iframe.style.height = height + "px";
@@ -76,7 +76,7 @@ viz(b)</code></pre><div data-jscall-id="38"><script data-jscall-id="39" type="te
     }
     register_resize_handler('http://127.0.0.1:9284')
 
-</script><iframe scrolling="no" id="348d1048-b1f5-413a-af1d-aa743369469c" data-jscall-id="37" src="http://127.0.0.1:9284/348d1048-b1f5-413a-af1d-aa743369469c" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
+</script><iframe scrolling="no" id="dd3e1b5b-4317-4b54-8de9-35f7b89cac1c" data-jscall-id="37" src="http://127.0.0.1:9284/dd3e1b5b-4317-4b54-8de9-35f7b89cac1c" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
 <pre><code class="language-julia hljs">s = Sphere((0.0, 0.0, 0.0), 1.0)
 
 viz(s)</code></pre><div data-jscall-id="41"><script data-jscall-id="42" type="text/javascript">
@@ -88,7 +88,7 @@ viz(s)</code></pre><div data-jscall-id="41"><script data-jscall-id="42" type="te
             const uuid = event.data[0];
             const width = event.data[1];
             const height = event.data[2];
-            const iframe = document.getElementById('9423df90-7730-485f-ba46-36fdb6a7d6d1');
+            const iframe = document.getElementById('277bf203-9952-4a72-9cd4-220edeeee7fc');
             if (iframe) {
                 iframe.style.width = width + "px";
                 iframe.style.height = height + "px";
@@ -102,7 +102,7 @@ viz(s)</code></pre><div data-jscall-id="41"><script data-jscall-id="42" type="te
     }
     register_resize_handler('http://127.0.0.1:9284')
 
-</script><iframe scrolling="no" id="9423df90-7730-485f-ba46-36fdb6a7d6d1" data-jscall-id="40" src="http://127.0.0.1:9284/9423df90-7730-485f-ba46-36fdb6a7d6d1" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
+</script><iframe scrolling="no" id="277bf203-9952-4a72-9cd4-220edeeee7fc" data-jscall-id="40" src="http://127.0.0.1:9284/277bf203-9952-4a72-9cd4-220edeeee7fc" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
 <p>The parameters of these primitive geometries can be queried easily:</p><pre><code class="language-julia hljs">extrema(b)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">(Point(0.0, 0.0, 0.0), Point(1.0, 1.0, 1.0))</code></pre><pre><code class="language-julia hljs">centroid(s), radius(s)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">(Point(0.0, 0.0, 0.0), 1.0)</code></pre><p>As well as their measure (e.g. area, volume) and other geometric properties:</p><pre><code class="language-julia hljs">measure(b)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">1.0</code></pre><p>We can sample random points on primitives using different methods:</p><pre><code class="language-julia hljs">vs = sample(s, RegularSampling(10)) # 10 points over the sphere</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">IterTools.IVec{Base.Generator{Base.Iterators.ProductIterator{Tuple{StepRangeLen{Float64, Base.TwicePrecision{Float64}, Base.TwicePrecision{Float64}, Int64}, StepRangeLen{Float64, Base.TwicePrecision{Float64}, Base.TwicePrecision{Float64}, Int64}}}, Meshes.var&quot;#183#185&quot;{Meshes.var&quot;#r⃗#184&quot;{Float64, Float64}, Point3}}}(Base.Generator{Base.Iterators.ProductIterator{Tuple{StepRangeLen{Float64, Base.TwicePrecision{Float64}, Base.TwicePrecision{Float64}, Int64}, StepRangeLen{Float64, Base.TwicePrecision{Float64}, Base.TwicePrecision{Float64}, Int64}}}, Meshes.var&quot;#183#185&quot;{Meshes.var&quot;#r⃗#184&quot;{Float64, Float64}, Point3}}(Meshes.var&quot;#183#185&quot;{Meshes.var&quot;#r⃗#184&quot;{Float64, Float64}, Point3}(Meshes.var&quot;#r⃗#184&quot;{Float64, Float64}(1.0), Point(0.0, 0.0, 0.0)), Base.Iterators.ProductIterator{Tuple{StepRangeLen{Float64, Base.TwicePrecision{Float64}, Base.TwicePrecision{Float64}, Int64}, StepRangeLen{Float64, Base.TwicePrecision{Float64}, Base.TwicePrecision{Float64}, Int64}}}((0.28559933214452665:0.28559933214452665:2.8559933214452666, 0.0:0.6283185307179586:5.654866776461628))))</code></pre><p>And collect the generator with:</p><pre><code class="language-julia hljs">viz(collect(vs))</code></pre><div data-jscall-id="44"><script data-jscall-id="45" type="text/javascript">
     function register_resize_handler(remote_origin) {
         function resize_callback(event) {
@@ -112,7 +112,7 @@ viz(s)</code></pre><div data-jscall-id="41"><script data-jscall-id="42" type="te
             const uuid = event.data[0];
             const width = event.data[1];
             const height = event.data[2];
-            const iframe = document.getElementById('a7a2af8d-cd2e-4219-97bf-dba3d1747db0');
+            const iframe = document.getElementById('375307c9-13da-4ffa-9d54-3a56d10fee26');
             if (iframe) {
                 iframe.style.width = width + "px";
                 iframe.style.height = height + "px";
@@ -126,7 +126,7 @@ viz(s)</code></pre><div data-jscall-id="41"><script data-jscall-id="42" type="te
     }
     register_resize_handler('http://127.0.0.1:9284')
 
-</script><iframe scrolling="no" id="a7a2af8d-cd2e-4219-97bf-dba3d1747db0" data-jscall-id="43" src="http://127.0.0.1:9284/a7a2af8d-cd2e-4219-97bf-dba3d1747db0" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
+</script><iframe scrolling="no" id="375307c9-13da-4ffa-9d54-3a56d10fee26" data-jscall-id="43" src="http://127.0.0.1:9284/375307c9-13da-4ffa-9d54-3a56d10fee26" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
 <h3 id="Polytopes"><a class="docs-heading-anchor" href="#Polytopes">Polytopes</a><a id="Polytopes-1"></a><a class="docs-heading-anchor-permalink" href="#Polytopes" title="Permalink"></a></h3><p>Polytopes are geometries with &quot;flat&quot; sides. They generalize polygons and polyhedra. Most commonly used polytopes are already defined in the project, including <a href="geometries/polytopes.html#Meshes.Segment"><code>Segment</code></a>, <a href="geometries/polytopes.html#Meshes.Ngon"><code>Ngon</code></a> (e.g. Triangle, Quadrangle), <a href="geometries/polytopes.html#Meshes.Tetrahedron"><code>Tetrahedron</code></a>, <a href="geometries/polytopes.html#Meshes.Pyramid"><code>Pyramid</code></a> and <a href="geometries/polytopes.html#Meshes.Hexahedron"><code>Hexahedron</code></a>.</p><pre><code class="language-julia hljs">t = Triangle((0.0, 0.0), (1.0, 0.0), (0.0, 1.0))
 
 viz(t)</code></pre><div data-jscall-id="47"><script data-jscall-id="48" type="text/javascript">
@@ -138,7 +138,7 @@ viz(t)</code></pre><div data-jscall-id="47"><script data-jscall-id="48" type="te
             const uuid = event.data[0];
             const width = event.data[1];
             const height = event.data[2];
-            const iframe = document.getElementById('575ad6e2-5092-436b-8345-c79afdde4a0b');
+            const iframe = document.getElementById('01525528-04aa-4570-b45f-a5eb421fcd1b');
             if (iframe) {
                 iframe.style.width = width + "px";
                 iframe.style.height = height + "px";
@@ -152,7 +152,7 @@ viz(t)</code></pre><div data-jscall-id="47"><script data-jscall-id="48" type="te
     }
     register_resize_handler('http://127.0.0.1:9284')
 
-</script><iframe scrolling="no" id="575ad6e2-5092-436b-8345-c79afdde4a0b" data-jscall-id="46" src="http://127.0.0.1:9284/575ad6e2-5092-436b-8345-c79afdde4a0b" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
+</script><iframe scrolling="no" id="01525528-04aa-4570-b45f-a5eb421fcd1b" data-jscall-id="46" src="http://127.0.0.1:9284/01525528-04aa-4570-b45f-a5eb421fcd1b" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
 <p>Some of these geometries have additional functionality like the measure (or area):</p><pre><code class="language-julia hljs">measure(t) == area(t) == 1/2</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">true</code></pre><p>Or the ability to know whether or not a point is inside:</p><pre><code class="language-julia hljs">p = Point(0.5, 0.0)
 
 p ∈ t</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">true</code></pre><p>For line segments, for example, we have robust intersection algorithms:</p><pre><code class="language-julia hljs">s1 = Segment((0.0, 0.0), (1.0, 0.0))
@@ -171,7 +171,7 @@ viz(p)</code></pre><div data-jscall-id="50"><script data-jscall-id="51" type="te
             const uuid = event.data[0];
             const width = event.data[1];
             const height = event.data[2];
-            const iframe = document.getElementById('fad48693-4ec9-4fa5-afb3-228e40a3218b');
+            const iframe = document.getElementById('ec8e16d2-16e0-4fda-b8a0-b4c4cde7a7bd');
             if (iframe) {
                 iframe.style.width = width + "px";
                 iframe.style.height = height + "px";
@@ -185,7 +185,7 @@ viz(p)</code></pre><div data-jscall-id="50"><script data-jscall-id="51" type="te
     }
     register_resize_handler('http://127.0.0.1:9284')
 
-</script><iframe scrolling="no" id="fad48693-4ec9-4fa5-afb3-228e40a3218b" data-jscall-id="49" src="http://127.0.0.1:9284/fad48693-4ec9-4fa5-afb3-228e40a3218b" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
+</script><iframe scrolling="no" id="ec8e16d2-16e0-4fda-b8a0-b4c4cde7a7bd" data-jscall-id="49" src="http://127.0.0.1:9284/ec8e16d2-16e0-4fda-b8a0-b4c4cde7a7bd" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
 <p>The orientation of the above polygonal area is counter-clockwise (CCW):</p><pre><code class="language-julia hljs">orientation(p)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">:CCW</code></pre><p>We can get the outer polygonal chain, and reverse it:</p><pre><code class="language-julia hljs">c = chains(p)[1]
 
 reverse(c)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">6-Chain{2,Float64}
@@ -235,7 +235,7 @@ viz(g, showfacets = true)</code></pre><div data-jscall-id="53"><script data-jsca
             const uuid = event.data[0];
             const width = event.data[1];
             const height = event.data[2];
-            const iframe = document.getElementById('0dd30cc3-2cac-46f7-937a-a2e4d65d8f08');
+            const iframe = document.getElementById('f6ef0c68-0bb2-44ee-b7ff-952c25989d97');
             if (iframe) {
                 iframe.style.width = width + "px";
                 iframe.style.height = height + "px";
@@ -249,7 +249,7 @@ viz(g, showfacets = true)</code></pre><div data-jscall-id="53"><script data-jsca
     }
     register_resize_handler('http://127.0.0.1:9284')
 
-</script><iframe scrolling="no" id="0dd30cc3-2cac-46f7-937a-a2e4d65d8f08" data-jscall-id="52" src="http://127.0.0.1:9284/0dd30cc3-2cac-46f7-937a-a2e4d65d8f08" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
+</script><iframe scrolling="no" id="f6ef0c68-0bb2-44ee-b7ff-952c25989d97" data-jscall-id="52" src="http://127.0.0.1:9284/f6ef0c68-0bb2-44ee-b7ff-952c25989d97" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
 <p>No memory is allocated:</p><pre><code class="language-julia hljs">@allocated CartesianGrid(10000, 10000, 10000)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">0</code></pre><p>but we can still loop over the elements, which are quadrangles in 2D:</p><pre><code class="language-julia hljs">collect(elements(g))</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">10000-element Vector{Quadrangle{2, Float64, Vector{Point2}}}:
  Quadrangle(Point(0.0, 0.0), Point(1.0, 0.0), Point(1.0, 1.0), Point(0.0, 1.0))
  Quadrangle(Point(1.0, 0.0), Point(2.0, 0.0), Point(2.0, 1.0), Point(1.0, 1.0))
@@ -294,7 +294,7 @@ mesh = SimpleMesh(points, [tris; quads])</code></pre><pre class="documenter-exam
             const uuid = event.data[0];
             const width = event.data[1];
             const height = event.data[2];
-            const iframe = document.getElementById('5a07cfba-62a7-4fa9-9382-0ca03cf16074');
+            const iframe = document.getElementById('c43e86d5-edae-46d4-823f-b8468ad8f94b');
             if (iframe) {
                 iframe.style.width = width + "px";
                 iframe.style.height = height + "px";
@@ -308,7 +308,7 @@ mesh = SimpleMesh(points, [tris; quads])</code></pre><pre class="documenter-exam
     }
     register_resize_handler('http://127.0.0.1:9284')
 
-</script><iframe scrolling="no" id="5a07cfba-62a7-4fa9-9382-0ca03cf16074" data-jscall-id="55" src="http://127.0.0.1:9284/5a07cfba-62a7-4fa9-9382-0ca03cf16074" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
+</script><iframe scrolling="no" id="c43e86d5-edae-46d4-823f-b8468ad8f94b" data-jscall-id="55" src="http://127.0.0.1:9284/c43e86d5-edae-46d4-823f-b8468ad8f94b" style="position: relative; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; border: none"></iframe></div>
 <p>The actual geometries of the elements are materialized in a lazy fashion like with the Cartesian grid:</p><pre><code class="language-julia hljs">collect(elements(mesh))</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">4-element Vector{Ngon{N, 2, Float64, V} where {N, V&lt;:AbstractVector{Point2}}}:
  Triangle(Point(0.0, 0.0), Point(0.25, 0.5), Point(0.0, 1.0))
  Triangle(Point(1.0, 1.0), Point(0.75, 0.5), Point(1.0, 0.0))
@@ -323,7 +323,7 @@ mesh = SimpleMesh(points, [tris; quads])</code></pre><pre class="documenter-exam
   variables (rank 2)
     └─quality (String)
     └─state (Bool)
-  domain: 4 SimpleMesh{2,Float64}</code></pre><p>More generally, we can attach a table to any rank:</p><ul><li>0 (vertices)</li><li>1 (segments)</li><li>2 (triangles, quadrangles, ...)</li><li>3 (tetrahedrons, hexahedrons, ...)</li></ul><p>To retrieve the data table for a given rank we use the <code>values</code> function:</p><pre><code class="language-julia hljs">values(d, 0)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">(temperature = [0.6409163843158039, 0.8990473349923629, 0.061982911876147684, 0.6211340863708853, 0.8261359746435337, 0.021041780931474685], pressure = [0.445561137018639, 0.4805164224307912, 0.686582925337598, 0.9149645760243613, 0.8592536844487424, 0.4454471704723941])</code></pre><pre><code class="language-julia hljs">values(d, 2)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">(quality = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;], state = Bool[1, 0, 1, 0])</code></pre><p>If we ommit the rank, the function will return the <code>etable</code> of the mesh:</p><pre><code class="language-julia hljs">values(d)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">(quality = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;], state = Bool[1, 0, 1, 0])</code></pre><p>When a table is not available for a given rank, the value <code>nothing</code> is returned instead:</p><pre><code class="language-julia hljs">values(d, 1) === nothing</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">true</code></pre><p>Finally, we can use the <code>domain</code> function to retrieve the underlying domain of the data, which in this case is a <code>SimpleMesh</code>:</p><pre><code class="language-julia hljs">domain(d)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">4 SimpleMesh{2,Float64}
+  domain: 4 SimpleMesh{2,Float64}</code></pre><p>More generally, we can attach a table to any rank:</p><ul><li>0 (vertices)</li><li>1 (segments)</li><li>2 (triangles, quadrangles, ...)</li><li>3 (tetrahedrons, hexahedrons, ...)</li></ul><p>To retrieve the data table for a given rank we use the <code>values</code> function:</p><pre><code class="language-julia hljs">values(d, 0)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">(temperature = [0.7838401575176591, 0.012596465556509062, 0.902549383359386, 0.7874399528857611, 0.07433472728575075, 0.6804869611149997], pressure = [0.6651919853325964, 0.7900092205803386, 0.8687576197670643, 0.48125355891534805, 0.7853426155136142, 0.45189986655704584])</code></pre><pre><code class="language-julia hljs">values(d, 2)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">(quality = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;], state = Bool[1, 0, 1, 0])</code></pre><p>If we ommit the rank, the function will return the <code>etable</code> of the mesh:</p><pre><code class="language-julia hljs">values(d)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">(quality = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;], state = Bool[1, 0, 1, 0])</code></pre><p>When a table is not available for a given rank, the value <code>nothing</code> is returned instead:</p><pre><code class="language-julia hljs">values(d, 1) === nothing</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">true</code></pre><p>Finally, we can use the <code>domain</code> function to retrieve the underlying domain of the data, which in this case is a <code>SimpleMesh</code>:</p><pre><code class="language-julia hljs">domain(d)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">4 SimpleMesh{2,Float64}
   6 vertices
     └─Point(0.0, 0.0)
     └─Point(1.0, 0.0)
@@ -335,4 +335,4 @@ mesh = SimpleMesh(points, [tris; quads])</code></pre><pre class="documenter-exam
     └─Triangle(1, 5, 3)
     └─Triangle(4, 6, 2)
     └─Quadrangle(1, 2, 6, 5)
-    └─Quadrangle(4, 3, 5, 6)</code></pre></article><nav class="docs-footer"><a class="docs-footer-nextpage" href="points.html">Points »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 0.27.18 on <span class="colophon-date" title="Friday 3 June 2022 21:18">Friday 3 June 2022</span>. Using Julia version 1.7.3.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+    └─Quadrangle(4, 3, 5, 6)</code></pre></article><nav class="docs-footer"><a class="docs-footer-nextpage" href="points.html">Points »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 0.27.19 on <span class="colophon-date" title="Sunday 5 June 2022 22:19">Sunday 5 June 2022</span>. Using Julia version 1.7.3.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
